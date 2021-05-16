@@ -1,34 +1,10 @@
 import countriesCard from '../templates/country-card.hbs';
 import listCountries from '../templates/country-list.hbs';
+import OnSerch from './fetchCountries';
 import { error } from './error';
 const debounce = require('lodash.debounce');
 const containerCard = document.querySelector('.data-container');
 const inputEl = document.querySelector('.input-field');
-
-class OnSerch {
-  constructor() {
-    this.search = '';
-  }
-
-  serchCountries() {
-    const url = `https://restcountries.eu/rest/v2/name/${this.search}`;
-    return fetch(url)
-      .then(r => {
-        if (r.ok) return r.json();
-        throw new Error(r.statusText);
-      })
-      .then(data => {
-        return data;
-      });
-  }
-
-  get query() {
-    return this.search;
-  }
-  set query(newQuery) {
-    this.search = newQuery;
-  }
-}
 
 inputEl.addEventListener('input', debounce(onSerchCountries, 500));
 const onSerch = new OnSerch();
