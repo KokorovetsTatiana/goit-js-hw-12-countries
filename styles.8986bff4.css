@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin-top: 0px;
+  text-align: center;
+}
+
+p {
+  margin-top: 0px;
+  font-size: 16px;
+  font-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /*
+   * CSS image reference example.
+   */
+  background-image: url('/bg-pattern.1c3a2592.png');
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+.input-field {
+  width: 625px;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.left-side {
+  padding-top: 20px;
+}
+
+ul {
+  padding: 0px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+li {
+  font-size: 16px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+li:first-child {
+  padding-top: 20px;
+}
+
+li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+article {
+  padding: 10px;
+}
+
+.country-data {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side {
+  width: 300px;
+  margin-right: 25px;
+}
+
+.country-flag {
+  width: 300px;
+}
+
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */
